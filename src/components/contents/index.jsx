@@ -50,8 +50,6 @@ const Content = ({carouselArray}) => {
         };
 
         window.addEventListener('resize', handleResize);
-        console.log(screenWidth);
-
         return()=>{
             window.removeEventListener('resize', handleResize);
         };

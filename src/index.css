@@ -23,3 +23,10 @@ body h3{
 .des{
   background-color: aqua;
 }
+
+
+@media (min-width:280px) and (max-width: 414px) {
+  body{
+    width: auto;
+  }
+}
