@@ -1,7 +1,7 @@
 .long-line{
     background-color: var(--light);
     width: 100vw;
-    position: fixed;
+    position: absolute;
     top: 90.5vh;
     left: 0;
     height: 10vh;
