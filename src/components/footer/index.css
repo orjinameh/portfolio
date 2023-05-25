@@ -5,14 +5,27 @@
     top: 90.5vh;
     left: 0;
     height: 10vh;
-    padding-top: 1rem;
+    padding-top: 1vw;
 }
 
 .long-line h4{
     color: white;
     padding: 0;
-    padding-bottom: .5rem;
+    padding-bottom: .5vw;
     margin: 0;
-    margin-left: .5rem;
+    margin-left: .5vw;
     text-align: left;
+}
+
+.footer svg{
+    width: 1rem;
+    margin-right: .5rem;
+}
+
+@media (min-width:280px) and (max-width: 414px) {
+    
+}
+
+@media (min-width:540px) and (max-width: 1260px) {
+    
 }

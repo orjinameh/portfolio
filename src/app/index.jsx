@@ -89,14 +89,14 @@ function App() {
     const opayAcc = "9127558997" ;
     const gtAcc = "0611578821" ;
     setModalContent(
-      <>
+      <div className="account-details">
         <h2>Opay:</h2>
         <h4>Account number: <CopyToClipboardField textToBeCopied={opayAcc}/> </h4>
         <h4>Account Name: stephen peter e.</h4>
         <h2>Guaranteed trust bank: </h2>
         <h4>Account number:  <CopyToClipboardField textToBeCopied={gtAcc}/> </h4>
         <h4>Account Name: stephen peter e.</h4>
-      </>
+      </div>
     );
   }
   const changeModalStateContactMe = () => {

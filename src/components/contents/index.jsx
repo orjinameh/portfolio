@@ -1,26 +1,61 @@
-import React, { useCallback, useState } from "react";
+import React, { useCallback, useLayoutEffect, useState } from "react";
 import "./index.css";
 const Content = ({carouselArray}) => {
     const [slidePosition, setSlidePosition] = useState(1);
     const [display, setDisplay] = useState(0);
+    const [screenWidth, setScreenWidth] = useState(window.innerWidth);
     const SlideshowRight=useCallback(() =>{
-        if(slidePosition===1){setDisplay(prev=>prev+20);setSlidePosition(2)};
-        if(slidePosition===2){setDisplay(prev=>prev+20);setSlidePosition(3)};
-        if(slidePosition===3){setDisplay(prev=>prev+20);setSlidePosition(4)};
-        if(slidePosition===4){setDisplay(prev=>prev+20);setSlidePosition(5)};
-        if(slidePosition===5){setDisplay(prev=>prev+20);setSlidePosition(6)};
-        if(slidePosition===6){setDisplay(prev=>prev+20);setSlidePosition(7)};
-        if(slidePosition===7){setDisplay(0); setSlidePosition(1)};
+        if(screenWidth>414){
+            if(slidePosition===1){setDisplay(prev=>prev+20);setSlidePosition(2)};
+            if(slidePosition===2){setDisplay(prev=>prev+20);setSlidePosition(3)};
+            if(slidePosition===3){setDisplay(prev=>prev+20);setSlidePosition(4)};
+            if(slidePosition===4){setDisplay(prev=>prev+20);setSlidePosition(5)};
+            if(slidePosition===5){setDisplay(prev=>prev+20);setSlidePosition(6)};
+            if(slidePosition===6){setDisplay(prev=>prev+20);setSlidePosition(7)};
+            if(slidePosition===7){setDisplay(0); setSlidePosition(1)};
+        }
+        if(screenWidth<=414){
+            if(slidePosition===1){setDisplay(prev=>prev+60);setSlidePosition(2)};
+            if(slidePosition===2){setDisplay(prev=>prev+60);setSlidePosition(3)};
+            if(slidePosition===3){setDisplay(prev=>prev+60);setSlidePosition(4)};
+            if(slidePosition===4){setDisplay(prev=>prev+60);setSlidePosition(5)};
+            if(slidePosition===5){setDisplay(prev=>prev+60);setSlidePosition(6)};
+            if(slidePosition===6){setDisplay(prev=>prev+60);setSlidePosition(7)};
+            if(slidePosition===7){setDisplay(0); setSlidePosition(1)};
+        }
     },[slidePosition])
     const SlideshowLeft=useCallback(() =>{
-        if(slidePosition===1){setDisplay(0);setSlidePosition(1)};
-        if(slidePosition===2){setDisplay(prev=>prev-20);setSlidePosition(1)};
-        if(slidePosition===3){setDisplay(prev=>prev-20);setSlidePosition(2)};
-        if(slidePosition===4){setDisplay(prev=>prev-20);setSlidePosition(3)};
-        if(slidePosition===5){setDisplay(prev=>prev-20);setSlidePosition(4)};
-        if(slidePosition===6){setDisplay(prev=>prev-20);setSlidePosition(5)};
-        if(slidePosition===7){setDisplay(prev=>prev-20); setSlidePosition(6)};
+        if (screenWidth>414){
+            if(slidePosition===1){setDisplay(0);setSlidePosition(1)};
+            if(slidePosition===2){setDisplay(prev=>prev-20);setSlidePosition(1)};
+            if(slidePosition===3){setDisplay(prev=>prev-20);setSlidePosition(2)};
+            if(slidePosition===4){setDisplay(prev=>prev-20);setSlidePosition(3)};
+            if(slidePosition===5){setDisplay(prev=>prev-20);setSlidePosition(4)};
+            if(slidePosition===6){setDisplay(prev=>prev-20);setSlidePosition(5)};
+            if(slidePosition===7){setDisplay(prev=>prev-20); setSlidePosition(6)};
+        }
+        if (screenWidth<=414){
+            if(slidePosition===1){setDisplay(0);setSlidePosition(1)};
+            if(slidePosition===2){setDisplay(prev=>prev-60);setSlidePosition(1)};
+            if(slidePosition===3){setDisplay(prev=>prev-60);setSlidePosition(2)};
+            if(slidePosition===4){setDisplay(prev=>prev-60);setSlidePosition(3)};
+            if(slidePosition===5){setDisplay(prev=>prev-60);setSlidePosition(4)};
+            if(slidePosition===6){setDisplay(prev=>prev-60);setSlidePosition(5)};
+            if(slidePosition===7){setDisplay(prev=>prev-60); setSlidePosition(6)};
+        }
     },[slidePosition])
+    useLayoutEffect(()=>{
+        const handleResize = () =>{
+            setScreenWidth(window.innerWidth);
+        };
+
+        window.addEventListener('resize', handleResize);
+        console.log(screenWidth);
+
+        return()=>{
+            window.removeEventListener('resize', handleResize);
+        };
+    },[screenWidth]);
     return (
         <>
             <div className="contain">

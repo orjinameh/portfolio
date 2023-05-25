@@ -23,3 +23,11 @@
     top: 0;
     left: 0;
 }
+
+@media (min-width:280px) and (max-width: 414px) {
+    
+}
+
+@media (min-width:540px) and (max-width: 1260px) {
+    
+}

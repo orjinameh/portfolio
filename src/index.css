@@ -6,6 +6,7 @@ body{
   background-color: var(--dark);
   display: flex;
   color: var(--light);
+  width: 100vw;
   overflow: hidden;
 }
 

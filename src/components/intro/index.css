@@ -13,7 +13,8 @@
 }
 
 .intro-container ul{
-    transform: translate(-248%,0%);
+    position: absolute;
+    left: 0vw;
     font-size: large;
 }
 
@@ -22,21 +23,23 @@
     padding-top: 0;
     transform: translate(0%,-80%);
     margin-top: 0;
-    font-size: 4rem;
+    font-size: 4vw;
     font-weight: lighter;
-    margin-left: 1rem;
+    margin-left: 1vw;
 }
 
 .short-line{
-    transform: translate(0%,-1650%);
-    width: 4vw;
-    margin-left: .2rem;
-    height: .3rem;
+    position: absolute;
+    top: 21vh;
+    left: 27vw;
+    width: 2vw;
+    margin-left: .2vw;
+    height: .3vw;
     background-color: var(--light);
 }
 
 .contact{
-    width: 10vw;
+    width: 7.9rem;
     height: 3.9vh;
     margin-top: 40vh;
     margin-left: 1.7vw;
@@ -48,16 +51,12 @@
     left: 0;
     padding: 0rem;
     cursor: pointer;
-    /* padding-top: .1rem;
-    padding-bottom: .1rem; */
-    /* box-sizing: border-box; */
-    /* overflow: hidden; */
     transition: width 0.2s linear;
 }
 
 .img-container{
-    width: 10rem;
-    height: 10rem;
+    width: 10vw;
+    height: 10vw;
     position: absolute;
     left: 88vw;
     top: 26vh;
@@ -73,10 +72,9 @@
 
 .img-container img{
     object-fit: cover;
-    /* object-position: 10vw -10vh; */
-    width: 8rem;
+    width: 8vw;
     border-radius: 5rem;
-    height: 8rem;
+    height: 8vw;
 }
 
 .contact p{
@@ -86,21 +84,137 @@
 }
 
 .contact:hover{
-    width: 13.3vw;
-    /* left: 1vw; */
-    /* animation-delay: 2s;
-    animation: name duration timing-function delay iteration-count direction fill-mode; */
+    width: 10.5rem;
     
 }
 
 .gray-background{
     background-color: var(--light);
-    /* position: absolute; */
+    position: absolute;
     float: right;
-    transform: translate(-1120%,1%);
-    transition: transform 0.2s linear;
+    left: 6.6rem;
+    transition: left 0.2s linear;
 }
 
 .contact:hover .gray-background{
-    transform: translate(-900%,0%);
+    left: 9.2rem;
+}
+
+@media (min-width:280px) and (max-width: 414px) {
+    .intro-container{
+        width: 96vw;
+        height: 48vh;
+        box-sizing: border-box;
+        margin-left: -.1vw;
+        margin-top: 1vh;
+        border-radius: 2vh;
+        display: flex;
+        align-items: center;
+        /* justify-content: center; */
+        background-color: gray;
+    }
+    
+    .intro-container ul{
+        position:absolute;
+        transform: translate(0%,0%);
+        top: 20vh;
+        left: 0vw;
+        font-size: large;
+    }
+    
+    .intro-container h2{
+        color: var(--light);
+        padding-top: 0;
+        transform: translate(0%,0%);
+        margin-top: 0;
+        font-size: 2rem;
+        font-weight: lighter;
+        position: absolute;
+        top:15vh;
+        left:2vw;
+        margin-left: .1rem;
+    }
+    
+    .short-line{
+        transform: translate(0%,0%);
+        position: absolute;
+        top:17.5vh;
+        left:60vw;
+        width: 4vw;
+        margin-left: .2rem;
+        height: .3rem;
+        background-color: var(--light);
+    }
+    
+    .contact{
+        width: 30vw;
+        height: 3.9vh;
+        margin-top: 40vh;
+        margin-left: 3vw;
+        border: .13rem solid var(--light);
+        display: flex;
+        align-items: center;
+        border-radius: 2rem;
+        position: absolute;
+        left: 0;
+        padding: 0rem;
+        cursor: pointer;
+        transition: width 0.2s linear;
+    }
+    
+    .img-container{
+        width: 10rem;
+        height: 10rem;
+        position: absolute;
+        left: 56vw;
+        top: 26vh;
+    }
+    
+    .img-container h3{
+        color: var(--dark);
+        background-color:rgba(255, 255, 255, 0.308);
+        text-align: center;
+        width: 40vw;
+        cursor: pointer;
+        border-radius: .4rem;
+    }
+    
+    .img-container img{
+        object-fit: cover;
+        /* object-position: 10vw -10vh; */
+        width: 8rem;
+        border-radius: 5rem;
+        height: 8rem;
+    }
+    
+    .contact p{
+        position: absolute;
+        left: 1vw;
+        cursor: pointer;
+    }
+    
+    .contact:hover{
+        width: 30vw;
+        /* left: 1vw; */
+        /* animation-delay: 2s;
+        animation: name duration timing-function delay iteration-count direction fill-mode; */
+        
+    }
+    
+    .gray-background{
+        display: none;
+        background-color: var(--light);
+        /* position: absolute; */
+        float: right;
+        transform: translate(-1120%,1%);
+        transition: transform 0.2s linear;
+    }
+    
+    .contact:hover .gray-background{
+        transform: translate(0%,0%);
+    }
+}
+
+@media (min-width:540px) and (max-width: 1260px) {
+    
 }

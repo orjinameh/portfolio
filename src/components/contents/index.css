@@ -75,7 +75,7 @@
 
 .svg{
     width: 1vw;
-    padding: .2rem;
+    padding: .2vw;
     border-radius: 1vw;
     position: absolute;
     left: 61vw;
@@ -91,4 +91,107 @@
     width: 20vw;
     /* margin-right: 1px; */
     height: 30vh;
+}
+
+@media (min-width:280px) and (max-width: 414px) {
+    .list{
+        display: flex;
+        grid-auto-flow: column;
+        /* scroll-behavior: auto; */
+        overflow: hidden;
+        position: absolute;
+        left: 20vw;
+        width: 60vw;
+        border-radius: 3px;
+        border:2px solid var(--green);
+        box-sizing: border-box;
+        margin: 0 auto;
+        margin-top: .7rem;
+        /* overscroll-behavior-x: contain;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none; */
+        z-index: 2;
+      }
+    
+    .contain{
+        margin: 0 auto;
+    }
+    
+    .carousel-background1{
+        background-color: #23ff063f;
+        width: 60vw;
+        height: 28.5vh;
+        border-radius: 3px;
+        position: absolute;
+        top: 59vh;
+        left: 21.5vw;
+        z-index: -2;
+    }
+    
+    .carousel-background2{
+        background-color: #23ff063f;
+        width: 60vw;
+        height: 28vh;
+        border-radius: 3px;
+        position: absolute;
+        top: 58.3vh;
+        left: 23vw;
+        z-index: -2;
+    }
+    
+    
+    .carousel img{
+        align-items: center;
+        justify-content: center;
+        object-fit: fill;
+        width: 60vw;
+        transition: right 1s;
+        position: relative;
+        height: 28vh;
+        z-index: -1;
+    }
+    
+    .arrow-righten{
+        position: absolute;
+        width: 4vw;
+        top: 73.5vh;
+        background-color: rgba(240, 248, 255, 0);
+        display: block;
+        left: 74vw;
+        z-index: 3;
+    }
+    
+    .arrow-left{
+        display: block;
+        position: absolute;
+        background-color: rgba(240, 248, 255, 0);
+        width: 4vw;
+        top: 73.5vh;
+        left: 20.2vw;
+        z-index: 3;
+    }
+    
+    .svg{
+        width: 1vw;
+        padding: .2rem;
+        border-radius: 1vw;
+        position: absolute;
+        left: 61vw;
+        z-index: 2;
+    }
+    
+    .carousel{
+        border-radius: 3px;
+        scroll-snap-align: start;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        width: 60vw;
+        /* margin-right: 1px; */
+        height: 28vh;
+    }
+}
+
+@media (min-width:540px) and (max-width: 1260px) {
+    
 }
