@@ -20,7 +20,7 @@
     cursor: pointer;
 }
 
-@media (min-width:280px) and (max-width: 450px) {
+@media (min-width:280px) and (max-width: 767px) {
     .input-clipboard{
         width: 25vw;
     }

@@ -52,7 +52,7 @@
     border-top-left-radius: .4rem;
 }
 
-@media (min-width:280px) and (max-width: 450px) {
+@media (min-width:280px) and (max-width: 767px) {
     .select-bar{
         display: grid;
         border-radius: .4rem;
