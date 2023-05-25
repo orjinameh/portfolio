@@ -5,7 +5,7 @@ const Content = ({carouselArray}) => {
     const [display, setDisplay] = useState(0);
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
     const SlideshowRight=useCallback(() =>{
-        if(screenWidth>414){
+        if(screenWidth>767){
             if(slidePosition===1){setDisplay(prev=>prev+20);setSlidePosition(2)};
             if(slidePosition===2){setDisplay(prev=>prev+20);setSlidePosition(3)};
             if(slidePosition===3){setDisplay(prev=>prev+20);setSlidePosition(4)};
@@ -14,7 +14,7 @@ const Content = ({carouselArray}) => {
             if(slidePosition===6){setDisplay(prev=>prev+20);setSlidePosition(7)};
             if(slidePosition===7){setDisplay(0); setSlidePosition(1)};
         }
-        if(screenWidth<=414){
+        if(screenWidth<=767){
             if(slidePosition===1){setDisplay(prev=>prev+60);setSlidePosition(2)};
             if(slidePosition===2){setDisplay(prev=>prev+60);setSlidePosition(3)};
             if(slidePosition===3){setDisplay(prev=>prev+60);setSlidePosition(4)};
@@ -25,7 +25,7 @@ const Content = ({carouselArray}) => {
         }
     },[slidePosition])
     const SlideshowLeft=useCallback(() =>{
-        if (screenWidth>414){
+        if (screenWidth>767){
             if(slidePosition===1){setDisplay(0);setSlidePosition(1)};
             if(slidePosition===2){setDisplay(prev=>prev-20);setSlidePosition(1)};
             if(slidePosition===3){setDisplay(prev=>prev-20);setSlidePosition(2)};
@@ -34,7 +34,7 @@ const Content = ({carouselArray}) => {
             if(slidePosition===6){setDisplay(prev=>prev-20);setSlidePosition(5)};
             if(slidePosition===7){setDisplay(prev=>prev-20); setSlidePosition(6)};
         }
-        if (screenWidth<=414){
+        if (screenWidth<=767){
             if(slidePosition===1){setDisplay(0);setSlidePosition(1)};
             if(slidePosition===2){setDisplay(prev=>prev-60);setSlidePosition(1)};
             if(slidePosition===3){setDisplay(prev=>prev-60);setSlidePosition(2)};
@@ -48,7 +48,6 @@ const Content = ({carouselArray}) => {
         const handleResize = () =>{
             setScreenWidth(window.innerWidth);
         };
-
         window.addEventListener('resize', handleResize);
         return()=>{
             window.removeEventListener('resize', handleResize);
