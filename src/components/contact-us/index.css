@@ -35,7 +35,7 @@
     text-align: center;
 }
 
-@media (min-width:280px) and (max-width: 414px) {
+@media (min-width:280px) and (max-width: 450px) {
     .form input, textarea{
         border: none;
         background-color: rgba(255, 255, 255, 0.363);

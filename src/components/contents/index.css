@@ -93,7 +93,7 @@
     height: 30vh;
 }
 
-@media (min-width:280px) and (max-width: 414px) {
+@media (min-width:280px) and (max-width: 450px) {
     .list{
         display: flex;
         grid-auto-flow: column;

@@ -100,7 +100,7 @@
     left: 9.2rem;
 }
 
-@media (min-width:280px) and (max-width: 414px) {
+@media (min-width:280px) and (max-width: 450px) {
     .intro-container{
         width: 96vw;
         height: 48vh;
