@@ -1,0 +1,94 @@
+.list{
+    display: flex;
+    grid-auto-flow: column;
+    /* scroll-behavior: auto; */
+    overflow: hidden;
+    position: absolute;
+    left: 40.18vw;
+    width: 20vw;
+    border-radius: 3px;
+    border:2px solid var(--green);
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-top: .7rem;
+    /* overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none; */
+    z-index: 2;
+  }
+
+.contain{
+    margin: 0 auto;
+}
+
+.carousel-background1{
+    background-color: #23ff063f;
+    width: 20vw;
+    height: 30vh;
+    border-radius: 3px;
+    position: absolute;
+    top: 59vh;
+    left: 40.5vw;
+    z-index: -2;
+}
+
+.carousel-background2{
+    background-color: #23ff063f;
+    width: 20vw;
+    height: 30vh;
+    border-radius: 3px;
+    position: absolute;
+    top: 58.3vh;
+    left: 40.8vw;
+    z-index: -2;
+}
+
+
+.carousel img{
+    align-items: center;
+    justify-content: center;
+    object-fit: fill;
+    width: 20vw;
+    transition: right 1s;
+    position: relative;
+    height: 30vh;
+    z-index: -1;
+}
+
+.arrow-righten{
+    position: absolute;
+    width: 1.2vw;
+    top: 73.5vh;
+    background-color: rgba(240, 248, 255, 0);
+    left: 58.4vw;
+    z-index: 3;
+}
+
+.arrow-left{
+    position: absolute;
+    background-color: rgba(240, 248, 255, 0);
+    width: 1.2vw;
+    top: 73.5vh;
+    left: 40.2vw;
+    z-index: 3;
+}
+
+.svg{
+    width: 1vw;
+    padding: .2rem;
+    border-radius: 1vw;
+    position: absolute;
+    left: 61vw;
+    z-index: 2;
+}
+
+.carousel{
+    border-radius: 3px;
+    scroll-snap-align: start;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 20vw;
+    /* margin-right: 1px; */
+    height: 30vh;
+}

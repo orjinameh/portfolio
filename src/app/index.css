@@ -1,0 +1,53 @@
+.select-bar{
+    display: grid;
+    border-radius: .4rem;
+    background-color: var(--green);
+    width: 10vw;
+    box-sizing: border-box;
+    position: absolute;
+    top: 5.5vh;
+    left: 67.5vw;
+}
+
+.select-bar div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .text-center{
+    margin-right: 20vw;
+} */
+
+.select-bar div:hover{
+    background-color: rgba(0, 0, 0, 0.158);
+    cursor: pointer;
+}
+
+.select-bar-container{
+    background-color: var(--green);
+    color: var(--light);
+    width: 5rem;
+    height: 1rem;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    border-radius: 1rem;
+    font-size: small;
+    text-align: center;
+    margin-left: 10.4rem;
+    cursor: pointer;
+}
+
+.graphics-designs:hover{
+    background-color: rgba(0, 0, 0, 0.158);
+    border-bottom-right-radius: .4rem;
+    border-bottom-left-radius: .4rem;
+}
+
+
+.website:hover{
+    background-color: rgba(0, 0, 0, 0.158);
+    border-top-right-radius: .4rem;
+    border-top-left-radius: .4rem;
+}
