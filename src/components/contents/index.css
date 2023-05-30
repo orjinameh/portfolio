@@ -13,9 +13,11 @@
     z-index: 2;
   }
 
-.contain{
+  .contain{
     margin: 0 auto;
-}
+    height: 32vh;
+    overflow: hidden;
+  }
 
 .carousel-background1{
     background-color: #23ff063f;
@@ -23,7 +25,7 @@
     height: 30vh;
     border-radius: 3px;
     position: absolute;
-    top: 59vh;
+    top: 53.5vh;
     left: 40.5vw;
     z-index: -2;
 }
@@ -34,7 +36,7 @@
     height: 30vh;
     border-radius: 3px;
     position: absolute;
-    top: 58.3vh;
+    top: 52.9vh;
     left: 40.8vw;
     z-index: -2;
 }
@@ -54,7 +56,7 @@
 .arrow-righten{
     position: absolute;
     width: 1.2vw;
-    top: 73.5vh;
+    top: 68.5vh;
     background-color: rgba(240, 248, 255, 0);
     left: 58.4vw;
     z-index: 3;
@@ -64,8 +66,8 @@
     position: absolute;
     background-color: rgba(240, 248, 255, 0);
     width: 1.2vw;
-    top: 73.5vh;
-    left: 40.2vw;
+    top: 68.5vh;
+    left: 40.8vw;
     z-index: 3;
 }
 
