@@ -1,13 +1,20 @@
 body{
-  color: white;
   box-sizing: border-box;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: var(--dark);
   display: flex;
+  background-color: var(--dark);
   color: var(--light);
   width: 100vw;
   overflow-x: hidden;
+}
+
+.p{
+  display: none;
+}
+
+.ab{
+  display: none;
 }
 
 body h3{
@@ -16,6 +23,8 @@ body h3{
 
 :root{
   --light:black;
+  --burl: burlywood;
+  --burl-dark:rgb(122, 100, 71);
   --dark:white;
   --green:#23ff06;
 }
@@ -27,6 +36,8 @@ body h3{
 
 @media (min-width:280px) and (max-width: 767px) {
   body{
-    width: auto;
+    width: 100vw;
+    background-color: var(--burl);
+    align-items: start;
   }
 }

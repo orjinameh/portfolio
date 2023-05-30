@@ -1,19 +1,15 @@
 .list{
     display: flex;
     grid-auto-flow: column;
-    /* scroll-behavior: auto; */
     overflow: hidden;
     position: absolute;
     left: 40.18vw;
     width: 20vw;
     border-radius: 3px;
-    border:2px solid var(--green);
+    border:2px solid var(--burl-dark);
     box-sizing: border-box;
     margin: 0 auto;
     margin-top: .7rem;
-    /* overscroll-behavior-x: contain;
-    scroll-snap-type: x mandatory;
-    scrollbar-width: none; */
     z-index: 2;
   }
 
@@ -89,7 +85,6 @@
     align-items: center;
     justify-content: center;
     width: 20vw;
-    /* margin-right: 1px; */
     height: 30vh;
 }
 
@@ -97,45 +92,46 @@
     .list{
         display: flex;
         grid-auto-flow: column;
-        /* scroll-behavior: auto; */
         overflow: hidden;
-        position: absolute;
-        left: 20vw;
+        position: static;
         width: 60vw;
         border-radius: 3px;
-        border:2px solid var(--green);
+        border:2px solid var(--burl-dark);
         box-sizing: border-box;
         margin: 0 auto;
         margin-top: .7rem;
-        /* overscroll-behavior-x: contain;
-        scroll-snap-type: x mandatory;
-        scrollbar-width: none; */
         z-index: 2;
       }
     
     .contain{
         margin: 0 auto;
+        height: 32vh;
+        overflow: hidden;
     }
     
     .carousel-background1{
-        background-color: #23ff063f;
+        background-color: rgba(122, 100, 71, 0.5);
         width: 60vw;
         height: 28.5vh;
         border-radius: 3px;
-        position: absolute;
-        top: 59vh;
-        left: 21.5vw;
+        transform: translate(2vw,-47.7vh);
+        position: relative;
+        margin: 0 auto;
+        top: 45%;
+        left: 0vw;
         z-index: -2;
     }
     
     .carousel-background2{
-        background-color: #23ff063f;
+        background-color: rgb(122, 100, 71, 0.5);
         width: 60vw;
+        transform: translate(1vw,-75.3vh);
         height: 28vh;
         border-radius: 3px;
-        position: absolute;
-        top: 58.3vh;
-        left: 23vw;
+        position: relative;
+        margin: 0 auto;
+        top: 44.3%;
+        left: 0vw;
         z-index: -2;
     }
     
@@ -152,31 +148,53 @@
     }
     
     .arrow-righten{
-        position: absolute;
+        position: static;
         width: 4vw;
-        top: 73.5vh;
+        padding: .2rem;
         background-color: rgba(240, 248, 255, 0);
         display: block;
-        left: 74vw;
+        border-radius: 1rem;
+        background-color: var(--burl-dark);
         z-index: 3;
     }
     
     .arrow-left{
         display: block;
-        position: absolute;
-        background-color: rgba(240, 248, 255, 0);
+        background-color: var(--burl-dark);
+        padding: .2rem;
+        border-radius: 1rem;
+        position: static;
         width: 4vw;
-        top: 73.5vh;
-        left: 20.2vw;
         z-index: 3;
     }
     
-    .svg{
-        width: 1vw;
-        padding: .2rem;
-        border-radius: 1vw;
-        position: absolute;
-        left: 61vw;
+    .right-btn{
+        width: 30vw;
+        padding-left: 2vw;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: start;
+    }
+
+    .left-btn{
+        width: 30vw;
+        padding-right: 2vw;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: end;
+    }
+
+    .svg-container{
+        width: auto;
+        margin: 0 auto;
+        padding: 0rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0;
+        position: relative;
+        left: 0vw;
+        transform: translate(0,-15vh);
         z-index: 2;
     }
     
@@ -187,7 +205,6 @@
         align-items: center;
         justify-content: center;
         width: 60vw;
-        /* margin-right: 1px; */
         height: 28vh;
     }
 }

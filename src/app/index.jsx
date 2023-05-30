@@ -22,6 +22,7 @@ import con7 from "../images/web/Capture7.PNG"
 import Modal from "../components/modal";
 import CopyToClipboardField from "../components/copy-to-clipboard";
 import { ContactUs } from "../components/contact-us";
+import About from "../components/about";
 function App() {
   const graphics = [
     {
@@ -55,25 +56,25 @@ function App() {
   ];
   const web = [{
     image: con1,
-    id:1
-  },{
+    id: 1
+  }, {
     image: con2,
-    id:2
-  },{
-    image:con3,
-    id:3
-  },{
-    image:con4,
-    id:4
-  },{
-    image:con5,
-    id:5
-  },{
-    image:con6,
-    id:6
-  },{
-    image:con7,
-    id:7
+    id: 2
+  }, {
+    image: con3,
+    id: 3
+  }, {
+    image: con4,
+    id: 4
+  }, {
+    image: con5,
+    id: 5
+  }, {
+    image: con6,
+    id: 6
+  }, {
+    image: con7,
+    id: 7
   }]
   const [isDisplay, setIsDisplay] = useState(true);
   const [placeHolder, setPlaceHolder] = useState("web designs");
@@ -82,45 +83,40 @@ function App() {
   const [modalContent, setModalContent] = useState("");
   const [isModal, setIsModal] = useState(false);
   const changeModalState = () => {
-    setIsModal(prev=>!prev)
+    setIsModal(prev => !prev)
   }
   const changeModalStateDonation = () => {
     changeModalState();
-    const opayAcc = "9127558997" ;
-    const gtAcc = "0611578821" ;
+    const opayAcc = "9127558997";
+    const gtAcc = "0611578821";
     setModalContent(
       <div className="account-details">
         <h2>Opay:</h2>
-        <h4>Account number: <CopyToClipboardField textToBeCopied={opayAcc}/> </h4>
+        <h4>Account number: <CopyToClipboardField textToBeCopied={opayAcc} /> </h4>
         <h4>Account Name: stephen peter e.</h4>
         <h2>Guaranteed trust bank: </h2>
-        <h4>Account number:  <CopyToClipboardField textToBeCopied={gtAcc}/> </h4>
+        <h4>Account number:  <CopyToClipboardField textToBeCopied={gtAcc} /> </h4>
         <h4>Account Name: stephen peter e.</h4>
       </div>
     );
   }
   const changeModalStateContactMe = () => {
     changeModalState();
-    setModalContent(<ContactUs clear={setIsModal}/>);
+    setModalContent(<ContactUs clear={setIsModal} />);
   }
   const selectBar =
     <>
       <div className="select-bar-container" onClick={() => setIsDisplay(prev => !prev)}>
         {placeHolder}
       </div>
-      {
-        isDisplay ? "" : <div className="select-bar">
-          <div className="website" onClick={() => { setPlaceHolder("web designs"); setIsDisplay(prev => !prev); setCarouselArray(web); setNumberOfPortfolio(web.length) }}>web designs</div>
-          <div className="graphics-designs" onClick={() => { setPlaceHolder("graphics"); setIsDisplay(prev => !prev); setCarouselArray(graphics); setNumberOfPortfolio(graphics.length) }}>graphics</div>
-        </div>
-      }
     </>
   return (
     <>
       <Navbar selectBar={selectBar} numberOfPortfolio={numberOfPortfolio} />
-      <Intro handleClickContactMe={changeModalStateContactMe} handleClickDonation={changeModalStateDonation}/>
+      <Intro handleClickContactMe={changeModalStateContactMe} handleClickDonation={changeModalStateDonation} />
+      <About />
       <div className="text-center"><h3>My projects:</h3></div>
-      {isModal?createPortal(<Modal content={modalContent} handleClick={changeModalState}/>, document.body):""}
+      {isModal ? createPortal(<Modal content={modalContent} handleClick={changeModalState} />, document.body) : ""}
       <Content carouselArray={carouselArray} />
       <Footer />
     </>

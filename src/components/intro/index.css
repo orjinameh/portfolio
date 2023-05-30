@@ -1,37 +1,34 @@
 .intro-container{
-    width: 99vw;
-    height: 48vh;
-    /* padding-top: 14vh; */
+    width: 98vw;
+    height: 18rem;
     box-sizing: border-box;
     margin-left: -.1vw;
     margin-top: 1vh;
     border-radius: 2vh;
     display: flex;
     align-items: center;
-    /* justify-content: center; */
     background-color: gray;
 }
 
-.intro-container ul{
-    position: absolute;
-    left: 0vw;
+.one ul{
+    text-align: start;
     font-size: large;
 }
 
-.intro-container h2{
+.one h2{
     color: var(--light);
     padding-top: 0;
+    position: absolute;
     transform: translate(0%,-80%);
     margin-top: 0;
+    display: flex;
+    align-items: center;
     font-size: 4vw;
     font-weight: lighter;
     margin-left: 1vw;
 }
 
 .short-line{
-    position: absolute;
-    top: 21vh;
-    left: 27vw;
     width: 2vw;
     margin-left: .2vw;
     height: .3vw;
@@ -41,7 +38,7 @@
 .contact{
     width: 7.9rem;
     height: 3.9vh;
-    margin-top: 40vh;
+    margin-top: 10vh;
     margin-left: 1.7vw;
     border: .13rem solid var(--light);
     display: flex;
@@ -66,7 +63,8 @@
     color: var(--dark);
     background-color:rgba(255, 255, 255, 0.308);
     text-align: center;
-    width: 11vw;cursor: pointer;
+    width: 11vw;
+    cursor: pointer;
     border-radius: .4rem;
 }
 
@@ -74,7 +72,6 @@
     object-fit: cover;
     width: 8vw;
     border-radius: 5rem;
-    height: 8vw;
 }
 
 .contact p{
@@ -102,94 +99,102 @@
 
 @media (min-width:280px) and (max-width: 767px) {
     .intro-container{
-        width: 96vw;
-        height: 48vh;
+        width: 95vw;
+        height: 17rem;
         box-sizing: border-box;
-        margin-left: -.1vw;
-        margin-top: 1vh;
+        margin-top: .5rem;
+        margin-left: .5vw;
+        padding-top: 0rem;
         border-radius: 2vh;
         display: flex;
-        align-items: center;
-        /* justify-content: center; */
-        background-color: gray;
+        justify-items: space-between;
+        background-color: var(--burl-dark);
     }
     
-    .intro-container ul{
-        position:absolute;
-        transform: translate(0%,0%);
-        top: 20vh;
-        left: 0vw;
+    .one{
+        height: 17rem;
+        width: 75vw;
+        display: block;
+        align-items: start;
+        justify-content: start;
+    }
+
+    .ul{
+        position: static;
+        color: var(--dark);
+        transform: translate(0%,-50%);
         font-size: large;
+        text-align: start;
     }
     
-    .intro-container h2{
-        color: var(--light);
+    .one h2{
+        color: var(--dark);
+        position: static;
         padding-top: 0;
-        transform: translate(0%,0%);
+        transform: translate(8%,-10%);
         margin-top: 0;
-        font-size: 2rem;
+        margin-bottom: 3rem;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        font-size: 1.5rem;
         font-weight: lighter;
-        position: absolute;
-        top:15vh;
-        left:2vw;
-        margin-left: .1rem;
     }
     
     .short-line{
-        transform: translate(0%,0%);
-        position: absolute;
-        top:17.5vh;
-        left:60vw;
         width: 4vw;
         margin-left: .2rem;
         height: .3rem;
-        background-color: var(--light);
+        background-color: var(--dark);
     }
     
     .contact{
-        width: 30vw;
-        height: 3.9vh;
-        margin-top: 40vh;
-        margin-left: 3vw;
-        border: .13rem solid var(--light);
+        width: 7rem;
+        position: static;
+        margin-top: 0;
+        transform: translate(-20%,250%);
+        height: 1.8rem;
+        border: .13rem solid var(--dark);
         display: flex;
+        box-sizing: border-box;
+        padding: 2px;
         align-items: center;
+        color: var(--dark);
         border-radius: 2rem;
-        position: absolute;
-        left: 0;
-        padding: 0rem;
         cursor: pointer;
         transition: width 0.2s linear;
     }
     
     .img-container{
-        width: 10rem;
-        height: 10rem;
-        position: absolute;
-        left: 56vw;
-        top: 26vh;
+        box-sizing: border-box;
+        position: static;
+        padding-top: 6.6rem;
+        width: 44%;
+        align-items: center;
+        transform: translate(0%,-4%);
+        height: 100%;
+        display: block;
+        float: right;
     }
     
     .img-container h3{
         color: var(--dark);
+        margin: auto;
         background-color:rgba(255, 255, 255, 0.308);
         text-align: center;
-        width: 40vw;
+        width: 8.3rem;
         cursor: pointer;
         border-radius: .4rem;
     }
     
     .img-container img{
         object-fit: cover;
-        /* object-position: 10vw -10vh; */
-        width: 8rem;
-        border-radius: 5rem;
-        height: 8rem;
+        width: 8.3rem;
+        border-radius: 150%;
     }
     
     .contact p{
-        position: absolute;
-        left: 1vw;
+        margin: auto;
         cursor: pointer;
     }
     
@@ -204,9 +209,8 @@
     .gray-background{
         display: none;
         background-color: var(--light);
-        /* position: absolute; */
         float: right;
-        transform: translate(-1120%,1%);
+        transform: translate(0%,0%);
         transition: transform 0.2s linear;
     }
     

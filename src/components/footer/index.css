@@ -1,11 +1,12 @@
 .long-line{
     background-color: var(--light);
-    width: 100vw;
+    width: 103vw;
+    box-sizing: border-box;
+    height: 5rem;
+    padding: 1rem;
     position: absolute;
-    top: 90.5vh;
+    bottom: 0;
     left: 0;
-    height: 10vh;
-    padding-top: 1vw;
 }
 
 .long-line h4{
@@ -13,7 +14,6 @@
     padding: 0;
     padding-bottom: .5vw;
     margin: 0;
-    margin-left: .5vw;
     text-align: left;
 }
 
@@ -23,7 +23,27 @@
 }
 
 @media (min-width:280px) and (max-width: 414px) {
+    .long-line{
+        background-color: var(--light);
+        width: 103vw;
+        box-sizing: border-box;
+        height: 5rem;
+        padding: 1rem;
+        transform: translate(-.8rem,.5rem);
+    }
     
+    .long-line h4{
+        color: white;
+        padding: 0;
+        padding-bottom: .5vw;
+        margin: 0;
+        text-align: left;
+    }
+    
+    .footer svg{
+        width: 1rem;
+        margin-right: .5rem;
+    }
 }
 
 @media (min-width:540px) and (max-width: 1260px) {

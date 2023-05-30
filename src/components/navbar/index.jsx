@@ -11,7 +11,7 @@ const Navbar = ({selectBar, numberOfPortfolio}) => {
             </div>
             <div className="portfolio-collection">
                 <div className="portfolio">
-                    <div className="poq">Portfolio <span className="portfolio-no">{numberOfPortfolio}</span> </div>
+                    <div className="poq">Portfolio</div><div className="portfolio-no">{numberOfPortfolio}</div>
                 </div>
                 <div className="collection">
                     <p>Collection</p>
