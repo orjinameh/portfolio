@@ -8,7 +8,7 @@ const About = () => {
             <p className="p">
                 I am peter stephen a software developer based in Nigeria
                 I develop full-stack web application using the MERN stack,
-                but I mostly love working on the front-end using CSS and REACT
+                but I mostly love working on the front-end using CSS and REACT.
             </p>
         </>
     );
