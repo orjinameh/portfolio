@@ -175,7 +175,7 @@
         padding-left: 2vw;
         box-sizing: border-box;
         display: flex;
-        justify-content: start;
+        justify-content: flex-start;
     }
 
     .left-btn{
@@ -183,7 +183,7 @@
         padding-right: 2vw;
         box-sizing: border-box;
         display: flex;
-        justify-content: end;
+        justify-content: flex-end;
     }
 
     .svg-container{

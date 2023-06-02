@@ -28,6 +28,7 @@
         width: 103vw;
         box-sizing: border-box;
         height: 5rem;
+        position: static;
         padding: 1rem;
         transform: translate(-.8rem,.5rem);
     }
