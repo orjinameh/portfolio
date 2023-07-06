@@ -12,72 +12,12 @@ import Content from "../components/contents";
 // import image5 from "../images/graphics/20220610_161450.jpg"
 // import image6 from "../images/graphics/20221125_111007.jpg"
 // import image7 from "../images/graphics/20221216_124131.jpg"
-import con1 from "../images/web/Capture.PNG"
-import con2 from "../images/web/Capture2.PNG"
-import con3 from "../images/web/Capture3.PNG"
-import con4 from "../images/web/Capture4.PNG"
-import con5 from "../images/web/Capture5.PNG"
-import con6 from "../images/web/Capture6.jpg"
-import con7 from "../images/web/Capture7.PNG"
 import Modal from "../components/modal";
 import CopyToClipboardField from "../components/copy-to-clipboard";
 import { ContactUs } from "../components/contact-us";
 import About from "../components/about";
 function App() {
-  // const graphics = [
-  //   {
-  //     image: image1,
-  //     id: 1
-  //   },
-  //   {
-  //     image: image2,
-  //     id: 2
-  //   },
-  //   {
-  //     image: image3,
-  //     id: 3
-  //   },
-  //   {
-  //     image: image4,
-  //     id: 4
-  //   },
-  //   {
-  //     image: image5,
-  //     id: 5
-  //   },
-  //   {
-  //     image: image6,
-  //     id: 6
-  //   },
-  //   {
-  //     image: image7,
-  //     id: 7
-  //   }
-  // ];
-  const web = [{
-    image: con1,
-    id: 1
-  }, {
-    image: con2,
-    id: 2
-  }, {
-    image: con3,
-    id: 3
-  }, {
-    image: con4,
-    id: 4
-  }, {
-    image: con5,
-    id: 5
-  }, {
-    image: con6,
-    id: 6
-  }, {
-    image: con7,
-    id: 7
-  }]
-  // const [isDisplay, setIsDisplay] = useState(true);
-  const placeHolder= "web designs";
+  const placeHolder = "web designs";
   const [modalContent, setModalContent] = useState("");
   const [isModal, setIsModal] = useState(false);
   const changeModalState = () => {
@@ -110,12 +50,18 @@ function App() {
     </>
   return (
     <>
-      <Navbar selectBar={selectBar} numberOfPortfolio={web.length} />
-      <Intro handleClickContactMe={changeModalStateContactMe} handleClickDonation={changeModalStateDonation} />
+      <Navbar />
+      <Intro />
       <About />
-      <div className="text-center"><h3>My projects:</h3></div>
+      <h2 className="mp">Projects</h2>
+      <Content />
       {isModal ? createPortal(<Modal content={modalContent} handleClick={changeModalState} />, document.body) : ""}
-      <Content carouselArray={web} />
+      <h1 className="bold"><span>Contact us!</span>&#x1f44d;&#x1f3fd;</h1>
+      <p className="thick">I appreciate your visit! presently, I'm actively
+        seeking to join a fresh group of innovative developers. If you believe
+        our compatibility is promising, please feel free to reach out to me via
+        phone <span>call</span> or <span onClick={changeModalStateContactMe}>email</span>.
+      </p>
       <Footer />
     </>
   );

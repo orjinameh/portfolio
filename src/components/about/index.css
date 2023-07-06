@@ -1,6 +1,29 @@
+.ab{
+    color: var(--light);
+    font-family: mySlimFont;
+    width: 50px;
+    border-bottom: 2px solid;
+}
+
 .p{
-    margin: 0 auto;
-    width: 80vw;
-    color: rgb(105, 105, 92);
+    margin: 0;
+    width: 50vw;
+    text-align: start;
+    color: var(--text);
     margin-bottom: 2vh;
 }
+
+.peace{
+    right: 0;
+    margin-top: -150px;
+    margin-right: -2vw;
+    transform: rotate(-45deg);
+    position: absolute;
+    width: 25vw;
+}
+
+@media (max-width: 480px) {
+    .p{
+        width: 90vw;
+    }
+  }

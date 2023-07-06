@@ -20,7 +20,7 @@
 .form textarea{
     resize: none;
     padding-top: 1vw;
-    height: 30vh;
+    height: 20vh;
 }
 
 .form{
@@ -62,7 +62,7 @@
     .form textarea{
         resize: none;
         padding-top: 1rem;
-        height: 30vh;
+        height: 20vh;
     }
     
     .submit-button{
