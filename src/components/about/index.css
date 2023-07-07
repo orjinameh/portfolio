@@ -1,11 +1,11 @@
-.ab{
+.ab {
     color: var(--light);
     font-family: mySlimFont;
     width: 50px;
     border-bottom: 2px solid;
 }
 
-.p{
+.p {
     margin: 0;
     width: 50vw;
     text-align: start;
@@ -13,17 +13,26 @@
     margin-bottom: 2vh;
 }
 
-.peace{
-    right: 0;
-    margin-top: -150px;
-    margin-right: -2vw;
+.peace {
     transform: rotate(-45deg);
-    position: absolute;
-    width: 25vw;
+    width: 100px;
+}
+
+.peace-div {
+    /* background-color: aqua; */
+    transform: translate(1%,-400px);
+    width: 100vw;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: end;
 }
 
 @media (max-width: 480px) {
-    .p{
+    .p {
         width: 90vw;
     }
-  }
+
+    .peace {
+        width: 25vw;
+    }
+}

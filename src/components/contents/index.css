@@ -6,6 +6,11 @@
     object-position: 100% 50%;
 }
 
+.contain{
+    width: 100vw;
+    overflow-x: hidden;
+}
+
 #image-track{
     display: flex;
     gap: 4vmin;

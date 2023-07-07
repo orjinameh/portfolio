@@ -3,6 +3,8 @@
     margin-top: 1vh;
     place-items: start;
     display: grid;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 .intro-container img{
@@ -16,8 +18,8 @@
 
 .intro-text span{
     animation: grad 3s infinite;
-    background-clip: text;
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 

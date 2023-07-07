@@ -6,6 +6,7 @@ body{
   color: var(--text);
   width: 100vw;
   overflow-x: hidden;
+  height: 1400px;
 }
 
 svg{
@@ -47,10 +48,12 @@ svg{
   --secondary:#5D670B;
 }
 
-@media (max-width: 480px) {
+@media (min-width: 280px) and (max-width: 780px) {
   body{
     width: 100vw;
     background-color: var(--dark);
+    margin: 0;
+    padding: 0;
     align-items: start;
     text-align: start;
   }
