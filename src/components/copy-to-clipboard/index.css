@@ -1,0 +1,31 @@
+.input-clipboard{
+    outline: none;
+    background-color: rgba(240, 248, 255, 0);
+    -webkit-backdrop-filter: blur(.1px);
+    backdrop-filter: blur(.1px);
+    border: none;
+    padding: 0;
+    text-align: center;
+    border-radius: .2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    width: 9vw;
+}
+
+.clip{
+    margin-left: .2vw;
+    padding: .1vw;
+    border: 1px solid var(--light);
+    border-radius: .3rem;
+    cursor: pointer;
+}
+
+@media (min-width:280px) and (max-width: 767px) {
+    .input-clipboard{
+        width: 25vw;
+    }
+}
+
+@media (min-width:540px) and (max-width: 1260px) {
+    
+}

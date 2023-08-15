@@ -1,0 +1,56 @@
+.intro-container{
+    box-sizing: border-box;
+    margin-top: 1vh;
+    place-items: start;
+    display: grid;
+    width: 100vw;
+}
+
+.intro-container img{
+    width: 13vw;
+}
+
+.okay{
+    margin-top: 10px;
+    position: relative;
+    transform: rotate(45deg) translateX(-25%);
+}
+
+.span{
+    animation: grad 3s infinite;
+    background-size: 400% 400%;
+    background-image:linear-gradient(-60deg, purple 10%, rgb(189, 99, 189) 40%, purple 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes grad {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+.intro-text{
+    font-family: myBoldFont;
+    font-size: 60px;
+    margin: 0px;
+    width: 350px;
+    text-align: start;
+}
+
+@media (max-width: 480px) {
+    .intro-text{
+        font-family: myBoldFont;
+        width: 80vw;
+        font-size: 15vw;
+        text-align: start;
+    }
+}
+

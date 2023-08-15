@@ -1,0 +1,166 @@
+body {
+  box-sizing: border-box;
+  text-align: center;
+  font-family: myFont;
+  background-image: var(--grad);
+  background-size: 1800vmin 1800vmin;
+  background-repeat: no-repeat;
+  background-position: var(--grad-pos);
+  color: var(--text);
+  width: 100vw;
+  padding: 10px;
+  transition: background-position 1s ease;
+  overflow-x: hidden;
+  height: 1400px;
+}
+
+svg {
+  width: 25px;
+  box-sizing: content-box;
+  stroke: var(--text);
+  stroke-width: 10px;
+}
+
+.text-white {
+  color: var(--light);
+}
+
+@font-face {
+  font-family: myFont;
+  src: url(./webfonts/Poppins-Light.otf);
+}
+
+@font-face {
+  font-family: mySlimFont;
+  src: url(./webfonts/Poppins-Thin.otf);
+}
+
+@font-face {
+  font-family: myBoldFont;
+  src: url(./webfonts/Poppins-Bold.otf);
+}
+
+:root {
+  --dark: rgb(0, 0, 0);
+  --grad: linear-gradient(45deg, black 50%, white 50%);
+  --grad-pos: -100% 50%;
+  --alt-dark: #1d1e29;
+  --alt-darker: #08080c;
+  --alt-border: #2a2b37;
+  --alt-dark-trans: #1d1e294b;
+  --alt-border-trans: #14141a;
+  --light: rgb(247, 247, 247);
+  --text: #B7B7B7;
+  --primary: #05a71b;
+  --secondary: #5D670B;
+
+  
+  --dark-lm: rgb(255, 255, 255);
+  --grad-lm: linear-gradient(45deg, black 50%, white 50%);
+  --grad-pos-lm: 100% 50%;
+  --alt-dark-lm: #1d1e29;
+  --alt-darker-lm: #08080c;
+  --alt-border-lm: #2a2b37;
+  --alt-dark-trans-lm: #1d1e294b;
+  --alt-border-trans-lm: #14141a;
+  --light-lm: rgb(3, 3, 3);
+  --text-lm: #070707;
+  --primary-lm: #05a71b;
+  --secondary-lm: #5D670B;
+
+  
+  --dark-dm: rgb(0, 0, 0);
+  --grad-dm: linear-gradient(45deg, black 50%, white 50%);
+  --grad-pos-dm: 0% 50%;
+  --alt-dark-dm: #1d1e29;
+  --alt-darker-dm: #08080c;
+  --alt-border-dm: #2a2b37;
+  --alt-dark-trans-dm: #1d1e294b;
+  --alt-border-trans-dm: #14141a;
+  --light-dm: rgb(247, 247, 247);
+  --text-dm: #B7B7B7;
+  --primary-dm: #05a71b;
+  --secondary-dm: #5D670B;
+}
+
+@media(prefers-color-scheme: light){
+  :root{
+    --dark:var(--dark-lm);
+    --grad:var(--grad-lm);
+    --grad-pos:var(--grad-pos-lm);
+    --alt-dark:var(--alt-dark-lm);
+    --alt-darker:var(--alt-darker-lm);
+    --alt-border:var(--alt-border-lm);
+    --alt-dark-trans:var(--alt-dark-trans-lm);
+    --alt-border-trans:var(--alt-border-trans-lm);
+    --light:var(--light-lm);
+    --text:var(--text-lm);
+    --primary:var(--primary-lm);
+    --secondary:var(--secondary-lm);
+  }
+}
+
+@media(prefers-color-scheme: dark){
+  :root{
+    --dark:var(--dark-dm);
+    --grad:var(--grad-dm);
+    --grad-pos:var(--grad-pos-dm);
+    --alt-dark:var(--alt-dark-dm);
+    --alt-darker:var(--alt-darker-dm);
+    --alt-border:var(--alt-border-dm);
+    --alt-dark-trans:var(--alt-dark-trans-dm);
+    --alt-border-trans:var(--alt-border-trans-dm);
+    --light:var(--light-dm);
+    --text:var(--text-dm);
+    --primary:var(--primary-dm);
+    --secondary:var(--secondary-dm);
+  }
+}
+
+[color-scheme='light']{
+  --dark:var(--dark-lm);
+  --grad:var(--grad-lm);
+  --grad-pos:var(--grad-pos-lm);
+  --alt-dark:var(--alt-dark-lm);
+  --alt-darker:var(--alt-darker-lm);
+  --alt-border:var(--alt-border-lm);
+  --alt-dark-trans:var(--alt-dark-trans-lm);
+  --alt-border-trans:var(--alt-border-trans-lm);
+  --light:var(--light-lm);
+  --text:var(--text-lm);
+  --primary:var(--primary-lm);
+  --secondary:var(--secondary-lm);
+}
+
+[color-scheme='dark']{
+  --dark:var(--dark-dm);
+  --grad:var(--grad-dm);
+  --grad-pos:var(--grad-pos-dm);
+  --alt-dark:var(--alt-dark-dm);
+  --alt-darker:var(--alt-darker-dm);
+  --alt-border:var(--alt-border-dm);
+  --alt-dark-trans:var(--alt-dark-trans-dm);
+  --alt-border-trans:var(--alt-border-trans-dm);
+  --light:var(--light-dm);
+  --text:var(--text-dm);
+  --primary:var(--primary-dm);
+  --secondary:var(--secondary-dm);
+}
+
+@media (min-width: 280px) and (max-width: 780px) {
+  body {
+    width: 100vw;
+    background-image: var(--grad);
+    margin: 0;
+    padding-left: 4px;
+    align-items: start;
+    text-align: start;
+  }
+
+  svg {
+    width: 7vw;
+    box-sizing: content-box;
+    stroke: var(--text);
+    stroke-width: 30px;
+  }
+}

@@ -1,0 +1,146 @@
+.mp{
+    color: var(--light);
+    font-family: mySlimFont;
+    text-align: start;
+    width: 50px;
+    border-bottom: 2px solid;
+}
+
+.bold span{
+    font-family: myBoldFont;
+}
+
+.form-d{
+    display: grid;
+    place-items: center;
+    align-content: center;
+}
+
+.form-d input{
+    padding: 18px;
+    font-size: 20px;
+    font-family: myBoldFont;
+    border: 3px solid;
+    width: 60vw;
+    height: 70px;
+    outline: none;
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+
+.form-d input:nth-child(1){
+    margin-bottom: 10px;
+}
+
+.form-d textarea{
+    font-size: 25px;
+    font-family: myBoldFont;
+    padding: 18px;
+    border: 3px solid;
+    border-radius: 8px;
+    width: 60vw;
+    outline: none;
+    height: 25vh;
+}
+
+.submit-button-d{
+    width: 60vw;
+    box-sizing: content-box;
+    height: 70px;
+    font-size: 20px;
+    padding: 18px;
+    background: purple;
+    border: none;
+    font-family: myBoldFont;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    color: var(--text);
+}
+
+.thick{
+    text-align: start;
+}
+
+.app-div{
+    width: 100vw;
+}
+
+.thick span{
+    cursor: pointer;
+    font-family: myBoldFont;
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(1px);
+    transform: translateY(100%);
+    transition: all 2s ease;
+}
+
+
+.hidden-x{
+    opacity: 0;
+    filter: blur(1px);
+    transform: translateX(100%);
+    transition: all 2s ease;
+}
+
+.show-y{
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateY(0%);
+}
+
+.show-x{
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0%);
+}
+
+@media (max-width:550px) {
+    
+.form-d{
+    display: grid;
+    place-items: center;
+    align-content: center;
+}
+
+.form-d input{
+    padding: 10px;
+    font-size: 20px;
+    font-family: myBoldFont;
+    width: 85vw;
+    height: 70px;
+    outline: none;
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+
+.form-d input:nth-child(1){
+    margin-bottom: 10px;
+}
+
+.form-d textarea{
+    font-size: 25px;
+    font-family: myBoldFont;
+    padding: 18px;
+    border-radius: 8px;
+    width: 81vw;
+    outline: none;
+    height: 25vh;
+}
+
+.submit-button-d{
+    width: 86vw;
+    height: 70px;
+    font-size: 20px;
+    padding: 10px;
+    background: purple;
+    border: none;
+    font-family: myBoldFont;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    color: var(--text);
+}
+
+}
