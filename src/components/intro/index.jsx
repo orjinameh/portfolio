@@ -28,7 +28,7 @@ const Intro = ({ handleClickDonation, handleClickContactMe }) => {
         <div className="intro-container">
             <img className="okay hidden-x" src={okay} alt="" />
             <h1 className="intro-text text-white hidden">
-                <span ref={ref} className="scroller">SKILLFULLY</span> CHANGING <span className="span">IDEAS</span> INTO <span className="span">TANGIBLE CREATIONS</span>.
+                <span ref={ref} className="scroller">BRIDGING</span> INDUSTRIAL <span className="span">AUTOMATION</span> WITH <span className="span">MODERN WEB</span>.
             </h1>
         </div>
     );

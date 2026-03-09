@@ -1,21 +1,36 @@
 import React from "react";
 import "./index.css";
-import peace from "../../images/peace.png"
 
 const About = () => {
     return (
         <div className="about-div">
             <h2 className="ab hidden">About</h2>
             <p className="p hidden">
-                Hello stranger! <span>&#128400;</span>, my name is Orjinameh Stephen, a software developer based in Nigeria &#x1F1F3;&#x1F1EC;.
-                I develop full-stack web application using the MERN stack,
-                but I mostly love working on the front-end using CSS and REACT.
+                Hello! I'm <span className="highlight">Orjinameh Peter Stephen</span>, a Full-Stack Developer and final-year Mechatronics & Systems Engineering student at ATBU Bauchi, Nigeria.
             </p>
-            <div className="peace-div">
-                <img src={peace} alt="" className="peace" />
+            <p className="p hidden">
+                I build modern web applications with the MERN stack, and I specialize in bridging the gap between <span className="highlight">industrial automation</span> and <span className="highlight">modern web technology</span> — combining my engineering background with 3 years of JavaScript/TypeScript experience.
+            </p>
+            <div className="skills-grid hidden">
+                <div className="skill-category">
+                    <h3>Frontend</h3>
+                    <p>React, Next.js, TypeScript, Tailwind CSS</p>
+                </div>
+                <div className="skill-category">
+                    <h3>Backend</h3>
+                    <p>Node.js, Express, MongoDB, REST APIs</p>
+                </div>
+                <div className="skill-category">
+                    <h3>Industrial</h3>
+                    <p>CODESYS, Modbus TCP, SCADA, OPC-UA</p>
+                </div>
+                <div className="skill-category">
+                    <h3>Tools</h3>
+                    <p>Git, Docker, WebSockets, JWT</p>
+                </div>
             </div>
         </div>
     );
 }
- 
-export default About
+
+export default About;
