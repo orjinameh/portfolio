@@ -74,15 +74,14 @@
     opacity: 0;
     filter: blur(1px);
     transform: translateY(100%);
-    transition: all 2s ease;
+    transition: all 0.6s ease;
 }
-
 
 .hidden-x{
     opacity: 0;
     filter: blur(1px);
     transform: translateX(100%);
-    transition: all 2s ease;
+    transition: all 0.6s ease;
 }
 
 .show-y{

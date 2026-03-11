@@ -1,5 +1,5 @@
 .highlight {
-    color: var(--accent, #00ff88);
+    color: var(--primary);
     font-weight: 600;
 }
 
@@ -11,14 +11,14 @@
 }
 
 .skill-category {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: var(--alt-dark-trans);
+    border: 1px solid var(--alt-border);
     border-radius: 8px;
     padding: 1rem;
 }
 
 .skill-category h3 {
-    color: var(--accent, #00ff88);
+    color: var(--primary);
     font-size: 0.85rem;
     text-transform: uppercase;
     letter-spacing: 0.1em;
