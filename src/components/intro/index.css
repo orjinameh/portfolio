@@ -54,3 +54,9 @@
     }
 }
 
+
+@media (max-width: 480px) {
+    .intro-text {
+        font-size: 10vw;
+    }
+}
